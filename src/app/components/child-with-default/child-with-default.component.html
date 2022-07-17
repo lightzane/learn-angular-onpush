@@ -1,0 +1,9 @@
+<ul>
+    <li *ngFor="let fruit of fruits">
+        {{ fruit.name }}
+    </li>
+</ul>
+
+<p>Note: This strategy has less performance</p>
+
+<button (click)="childUpdate()">Child Update (Internal)</button>

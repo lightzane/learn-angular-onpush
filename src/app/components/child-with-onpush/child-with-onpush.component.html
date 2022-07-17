@@ -1,0 +1,15 @@
+<ul>
+    <li *ngFor="let fruit of fruits">
+        {{ fruit.name }}
+    </li>
+</ul>
+
+<p>This strategy has <b>BETTER</b> performance</p>
+
+<button (click)="childUpdate()">Child Update (Internal)</button>
+
+<h5>Only updates when:</h5>
+<ul>
+    <li>There is NEW input from parent</li>
+    <li>Child updates internally BUT updates with the latest value in parent first before updating</li>
+</ul>

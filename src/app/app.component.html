@@ -1,0 +1,21 @@
+<p>
+  <button (click)="parentMutatesExisting()">Parent Mutates Existing data</button>
+</p>
+
+<hr>
+
+<p>
+  <button (click)="parentReplacesExisting()">Parent Replaces Existing data</button>
+  <span style="margin-left: 1em;">Note: This button replaces entire array with a new list/object (but 4 fruits are the same)</span>
+</p>
+
+<hr>
+
+Parent Value of First Fruit: {{ fruits[0].name }}
+
+<h1>Default <span>ChangeDetectionStrategy</span></h1>
+<app-child-with-default [fruits]="fruits"></app-child-with-default>
+
+
+<h1>OnPush <span>ChangeDetectionStrategy</span></h1>
+<app-child-with-onpush [fruits]="fruits"></app-child-with-onpush>
